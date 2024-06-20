@@ -2,15 +2,16 @@
   "name": "tsgit",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/cli.ts",
   "type": "module",
   "scripts": {
-    "start": "ts-node src/main.ts",
+    "start": "ts-node src/cli.ts",
     "build": "tsc",
-    "dev": "ts-node-dev --respawn --transpile-only src/main.ts",
-    "lint": "eslint . --ext .ts",
-    "format": "eslint . --ext .ts --fix",
-    "test": "jest"
+    "dev": "ts-node-dev --respawn --transpile-only src/cli.ts",
+    "lint": "eslint .",
+    "format": "eslint . --fix",
+    "test": "jest",
+    "tsgit": "ts-node src/cli.ts"
   },
   "husky": {
     "hooks": {
